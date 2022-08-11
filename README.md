@@ -1,6 +1,6 @@
 # Jenkins on Fargate with CDK
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=engel80_jenkins-fargate-cdk&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=engel80_jenkins-fargate-cdk) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=engel80_jenkins-fargate-cdk&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=engel80_jenkins-fargate-cdk)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ContainerOnAWS_jenkins-fargate-cdk&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ContainerOnAWS_jenkins-fargate-cdk) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ContainerOnAWS_jenkins-fargate-cdk&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=ContainerOnAWS_jenkins-fargate-cdk)
 
 ## Introduction
 
