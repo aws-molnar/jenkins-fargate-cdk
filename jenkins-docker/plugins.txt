@@ -1,5 +1,5 @@
 build-timeout:1.21
-plain-credentials:1.8
+plain-credentials:139.ved2b_9cf7587b
 pipeline-model-api:2.2114.v2654ca_721309
 pipeline-model-declarative-agent:1.1.1
 pipeline-model-definition:2.2114.v2654ca_721309 
@@ -16,7 +16,7 @@ pipeline-milestone-step:101.vd572fef9d926
 gradle:1.39.4
 maven-plugin:3.19
 nodejs:1.5.1
-git:4.11.1
+git:4.11.3
 git-client:3.11.2
 git-server:1.11
 github:1.34.5
