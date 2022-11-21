@@ -1,12 +1,10 @@
 # Jenkins on Fargate with CDK
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ContainerOnAWS_jenkins-fargate-cdk&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ContainerOnAWS_jenkins-fargate-cdk) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ContainerOnAWS_jenkins-fargate-cdk&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=ContainerOnAWS_jenkins-fargate-cdk)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=DevSecOpsSamples_jenkins-fargate-cdk&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=DevSecOpsSamples_jenkins-fargate-cdk) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=DevSecOpsSamples_jenkins-fargate-cdk&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=DevSecOpsSamples_jenkins-fargate-cdk)
 
-## Introduction
+## Overview
 
 ![Architecture](./screenshots/jenkins-arch.png?raw=true)
-
-For the full stack, refer to the https://github.com/engel80/jenkins-sonarqube-fargate-cdk project.
 
 ## Objectives
 
@@ -81,7 +79,7 @@ aws ssm put-parameter --name "/jenkins-fargate-cdk/vpc-id" --value "{existing-vp
 ### Step 2: ECS cluster
 
 ```bash
-cd ../ecs-jenkins-cluster
+cd ../ecs-devops-cluster
 cdk deploy 
 
 # or define your VPC id with context parameter
@@ -94,7 +92,7 @@ SSM parameter:
 
 Cluster Name: [config.ts](./config.ts)
 
-[ecs-jenkins-cluster/lib/jenkins-cluster-stack.ts](./ecs-jenkins-cluster/lib/jenkins-cluster-stack.ts)
+[ecs-devops-cluster/lib/devops-cluster-stack.ts.ts](./ecs-devops-cluster/lib/devops-cluster-stack.ts)
 
 ### Step 3: IAM Role
 
@@ -148,7 +146,7 @@ SSM parameters:
 * /jenkins-fargate-cdk/task-execution-role-arn
 * /jenkins-fargate-cdk/default-task-role-arn
 
-[ecs-jenkins-service/lib/ecs-jenkins-service-stack.ts](./ecs-jenkins-service/lib/ecs-jenkins-service-stack.ts)
+[ecs-jenkins-service/lib/jenkins-fargate-stack.ts](./ecs-jenkins-service/lib/jenkins-fargate-stack.ts)
 
 **IMPORTANT**
 
@@ -196,13 +194,13 @@ To connect into Jenkins container, refer to the [ecs-exec.md](./ecs-exec.md) pag
 │   ├── cdk.json
 │   └── lib
 │       └── ecs-iam-role-stack.ts
-├── ecs-jenkins-cluster
+├── ecs-devops-cluster
 │   ├── bin
 │   │   └── index.ts
 │   ├── cdk.json
 │   ├── jest.config.js
 │   └── lib
-│       └── jenkins-cluster-stack.ts
+│       └── devops-cluster-stack.ts.ts
 ├── ecs-jenkins-service
 │   ├── bin
 │   │   └── index.ts
