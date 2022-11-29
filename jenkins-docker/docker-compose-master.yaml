@@ -13,4 +13,4 @@ services:
     volumes:
     - ~/infra/jenkins_master:/var/jenkins_home
     environment:
-      TZ: "Asia/Seoul"
+      TZ: "America/New_York"
