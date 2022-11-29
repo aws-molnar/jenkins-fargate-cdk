@@ -51,7 +51,7 @@ export class JenkinsServiceStack extends Stack {
 
         const taskDefinition = new ecs.TaskDefinition(this, 'fargate-task-definition', {
             cpu: '4096',
-            memoryMiB: '4096',
+            memoryMiB: '8192',
             compatibility: ecs.Compatibility.FARGATE,
             family: `${serviceName}-task`,
             executionRole: iam.Role.fromRoleArn(this, 'task-execution-role', cdk.Lazy.string({ produce: () => executionRoleArn })),
